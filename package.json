@@ -1,11 +1,15 @@
 {
+  "homepage": "https://vidhaydhruv.github.io/vidhay-23rd",
   "name": "r3f-vite-starter",
   "private": true,
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
+    "start": "react-scripts start",
+    "predeploy":"npm run build",
+    "deploy":"gh-pages -d build",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
     "preview": "vite preview"
   },
   "dependencies": {
